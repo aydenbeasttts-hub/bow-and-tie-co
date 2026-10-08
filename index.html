@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bow & Tie Co.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bow & Tie Co.</div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#ties">Ties</a>
+                <a href="#bowties">Bowties</a>
+                <a href="#about">About</a>
+                <button id="cartButton">🛒 Cart (<span id="cartCount">0</span>)</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>Bow & Tie Co.</h1>
+
+            <p>
+                Classic style. Modern elegance.
+                Find the perfect tie or bowtie for every occasion.
+            </p>
+
+            <a href="#products" class="shop-button">Shop Now</a>
+        </div>
+    </section>
+
+
+    <!-- Products -->
+    <section id="products" class="products-section">
+
+        <p class="small-title">OUR COLLECTION</p>
+        <h2>Shop Our Styles</h2>
+
+        <div class="products">
+
+            <!-- Product 1 -->
+            <div class="product">
+                <div class="product-image">
+                    👔
+                </div>
+
+                <h3>Classic Black Tie</h3>
+
+                <p class="description">
+                    A timeless black tie for any formal occasion.
+                </p>
+
+                <p class="price">$24.99</p>
+
+                <button class="add-cart"
+                        onclick="addToCart('Classic Black Tie', 24.99)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product">
+                <div class="product-image">
+                    🎀
+                </div>
+
+                <h3>Elegant Black Bowtie</h3>
+
+                <p class="description">
+                    A classic bowtie designed for a sophisticated look.
+                </p>
+
+                <p class="price">$19.99</p>
+
+                <button class="add-cart"
+                        onclick="addToCart('Elegant Black Bowtie', 19.99)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product">
+                <div class="product-image">
+                    👔
+                </div>
+
+                <h3>Royal Blue Tie</h3>
+
+                <p class="description">
+                    A stylish blue tie that adds a touch of color.
+                </p>
+
+                <p class="price">$27.99</p>
+
+                <button class="add-cart"
+                        onclick="addToCart('Royal Blue Tie', 27.99)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product">
+                <div class="product-image">
+                    🎀
+                </div>
+
+                <h3>Red Bowtie</h3>
+
+                <p class="description">
+                    A bold red bowtie perfect for special occasions.
+                </p>
+
+                <p class="price">$21.99</p>
+
+                <button class="add-cart"
+                        onclick="addToCart('Red Bowtie', 21.99)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <p class="small-title">ABOUT US</p>
+
+        <h2>Style Made Simple</h2>
+
+        <p>
+            At Bow & Tie Co., we believe looking your best should be simple.
+            We create stylish ties and bowties for weddings, celebrations,
+            special events, and everyday outfits.
+        </p>
+
+    </section>
+
+
+    <!-- Cart Popup -->
+    <div id="cart" class="cart">
+
+        <div class="cart-box">
+
+            <button class="close-cart" onclick="closeCart()">✕</button>
+
+            <h2>Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <h3>
+                Total: $<span id="cartTotal">0.00</span>
+            </h3>
+
+            <button class="checkout" onclick="checkout()">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 Bow & Tie Co. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
